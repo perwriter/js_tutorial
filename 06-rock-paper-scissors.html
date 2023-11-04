@@ -32,15 +32,46 @@
     </button>
     <button
       onclick="
-      console.log(randomNumber
-    >
-      =0&& randomNumber<1/3) "
+    randomNumber = Math.random();
+    computerMove = '';
+    if (randomNumber >= 0 && randomNumber < 1/3) {
+        computerMove = 'rock';
+    } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove = 'paper';
+    } else {
+        computerMove = 'scissors';
+    }
+    result ='';
+    if (computerMove==='rock'){
+        result ='Won';
+    } else if (computerMove === 'paper'){result ='Tie';}
+    else if (computerMove === 'scissors'){
+        result ='Lost';
+    }
+    alert(`You picked Paper. Computer picked ${computerMove} .You ${result}`);
+    "
     >
       Paper
     </button>
     <button
       onclick="
-    console.log(randomNumber>=0&&randomNumber<1/3)
+    randomNumber = Math.random();
+    computerMove = '';
+    if (randomNumber >= 0 && randomNumber < 1/3) {
+        computerMove = 'rock';
+    } else if (randomNumber >= 1/3 && randomNumber < 2/3) {
+        computerMove = 'paper';
+    } else {
+        computerMove = 'scissors';
+    }
+    result ='';
+    if (computerMove==='rock'){
+        result ='Lost';
+    } else if (computerMove === 'paper'){result ='Won';}
+    else if (computerMove === 'scissors'){
+        result ='Tie';
+    }
+    alert(`You picked Scissors. Computer picked ${computerMove} .You ${result}`);
     "
     >
       Scissors
