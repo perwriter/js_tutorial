@@ -24,6 +24,21 @@
       } else {
         console.log("You cannot drive");
       }
+      //   Learning about Truthy and falsy values
+      //  Falsey values include;
+      //  false 0 NaN undefined null
+      //   The reason for use is that it acts like a shortcut to a code . For instance used to check if a cart has values for xample we can have
+      const cartQuantity = 5;
+      if (cartQuantity) {
+        console.log("Cart Has some products");
+      } else {
+        console.log("Add some products");
+      }
+      //   In this block of code what is happening is that we are using truthy and falsy to determine if cartQuantity has anything.
+      //   console.log(text / 5);
+      //   ternaly operator is the same as if else statement
+      const result = true ? "truthy" : "falsy";
+      console.log(result);
     </script>
   </body>
 </html>
