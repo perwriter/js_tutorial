@@ -37,8 +37,28 @@
       //   In this block of code what is happening is that we are using truthy and falsy to determine if cartQuantity has anything.
       //   console.log(text / 5);
       //   ternaly operator is the same as if else statement
-      const result = true ? "truthy" : "falsy";
-      console.log(result);
+      //   const result = true ? "truthy" : "falsy";
+      //   console.log(result);
+      const hour = 18;
+      const name = "Peter";
+      if (hour > 6 && hour <= 12) {
+        console.log(`Good Morning ${name}`);
+      } else if (hour > 13 && hour < 17) {
+        console.log(`Good Afternoon ${name}`);
+      } else if (hour > 17) {
+        console.log(`Goodnight ${name}`);
+      }
+
+      //   Second test
+      Age = "90";
+      isHoliday = true;
+      if (Age <= 6 || (Age >= 65 && isHoliday)) {
+        console.log("Qualify for Discount");
+      } else if (Age <= 6 || Age >= 65) {
+        console.log("Does not Qualify for Discount");
+      } else {
+        console.log("Does not Qualify");
+      }
     </script>
   </body>
 </html>
