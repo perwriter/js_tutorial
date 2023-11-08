@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Function Exercises</title>
+  </head>
+  <body>
+    <h2>Function exercises</h2>
+    <script>
+      // 7a-7c
+      //   function greet(name) {
+      //     if (!name) {
+      //       console.log("Hi there!");
+      //     } else {
+      //       console.log(`Hello ${name}!`);
+      //     }
+      //   }
+      //   greet("Peter");
+      //   greet("Simon");
+      //   greet();
+      // function convert(degree) {
+      //     const farenheight = (degree * 9) / 5 + 32;
+      //     console.log(`${degree} Degree is equal to ${farenheight}`);
+      //   }
+      //   convert(25);
+      //   function convert(farenheight) {
+      //     const Celsius = (farenheight - 32) * (5 / 9);
+      //     console.log(`${farenheight} Degree is equal to ${Celsius}`);
+      //   }
+      //   convert(86);
+      function convertToFahrenheit(celsius) {
+        return (celsius * 9) / 5 + 32;
+      }
+
+      function convertToCelsius(fahrenheit) {
+        return ((fahrenheit - 32) * 5) / 9;
+      }
+
+      function convertTemperature(degrees, unit) {
+        if (unit === "C") {
+          const result = convertToFahrenheit(degrees);
+          return `${result}F`;
+        } else if (unit === "F") {
+          const result = convertToCelsius(degrees);
+          return `${result}C`;
+        }
+      }
+
+      console.log(convertTemperature(25, "C"));
+      console.log(convertTemperature(86, "F"));
+    </script>
+  </body>
+</html>
