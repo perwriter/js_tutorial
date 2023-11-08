@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Practise exercises</title>
+  </head>
+  <body>
+    <h2>Practise exercises for objects</h2>
+    <script>
+      //   const amazon = {
+      //     product: "basketball",
+      //     price: "2095",
+      //   };
+      //   console.log(amazon);
+      //   amazon.price = "2595";
+      //   console.log(amazon);
+      //   amazon["delivery-time"] = "3days";
+      //   console.log(amazon);
+      //   console.log(amazon["delivery-time"]);
+      //   function comparePrice(product1, product2) {
+      //     if (product1.price < product2.price) {
+      //       return product1;
+      //     } else {
+      //       return product2;
+      //     }
+      //   }
+      //   const product1 = {
+      //     name: "Book",
+      //     price: "500",
+      //   };
+      //   const product2 = {
+      //     name: "spoon",
+      //     price: "100",
+      //   };
+      //   console.log(comparePrice(product1, product2));
+      function isSameProduct(product1, product2) {
+        if (
+          product1.name === product2.name &&
+          product1.price === product2.price
+        ) {
+          return true;
+        } else {
+          return false;
+        }
+      }
+      const product1 = {
+        name: "Book",
+        price: "500",
+      };
+      const product2 = {
+        name: "Book",
+        price: "500",
+      };
+      console.log(isSameProduct(product1, product2));
+      const origin = "Hello World";
+      const convert = origin.toLowerCase();
+      console.log(convert);
+    </script>
+  </body>
+</html>
