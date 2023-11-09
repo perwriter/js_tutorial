@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>09 Exercises</title>
+  </head>
+  <body>
+    <h2>09 Exercises</h2>
+    <button>9a</button>
+    <button class="nineb">9b</button>
+    <button
+      onclick="document.querySelector('.display').innerHTML = 'You Chose: Heads';"
+    >
+      Heads
+    </button>
+    <button
+      onclick="document.querySelector('.display').innerHTML = 'You Chose: Tails';"
+    >
+      Tails
+    </button>
+    <p class="display"></p>
+    <h2>9d</h2>
+    <input
+      class="jsinput"
+      placeholder="Name"
+      onkeydown="
+    if (event.key ==='Enter'){
+Fun();
+    }
+    "
+    />
+    <button
+      onclick="
+     Fun()
+     ;"
+    >
+      Submit
+    </button>
+    <p class="text">Name</p>
+    <script>
+      function Fun() {
+        const input = document.querySelector(".jsinput");
+        document.querySelector(
+          ".text"
+        ).innerHTML = `Your name is :${input.value}`;
+      }
+      function enter(event) {
+        if (event.key === "Enter") {
+          Calc();
+        }
+      }
+      console.log(document.querySelector("button"));
+      document.querySelector(".nineb").innerHTML = "9b Done";
+    </script>
+  </body>
+</html>
